@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Dashboard Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a2433;
+            color: #a9b4c9;
+            margin: 0;
+            padding: 20px;
+        }
+        .dashboard-wrapper {
+            background-color: #263544;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 1400px;
+            margin: auto;
+        }
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #384a5c;
+            padding: 10px 25px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #55b2f4;
+        }
+        .user-profile {
+            color: #fff;
+        }
+        .nav-bar {
+            display: flex;
+            background-color: #263544;
+            padding: 0 15px;
+            border-bottom: 1px solid #384a5c;
+        }
+        .nav-bar a {
+            color: #a9b4c9;
+            text-decoration: none;
+            padding: 15px 12px;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-bar a.active {
+            color: #fff;
+            border-bottom: 3px solid #0095ff;
+        }
+        .nav-bar a:hover {
+            color: #fff;
+        }
+        .content-area {
+            padding: 25px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .data-table th, .data-table td {
+            text-align: left;
+            padding: 18px 10px;
+            border-bottom: 1px solid #384a5c;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .data-table thead th {
+            color: #8a96a9;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .data-table tbody tr:hover {
+            background-color: #2c3f51;
+        }
+        .month-group-row td {
+            background-color: #2a3d4f;
+            color: #d0d8e8;
+            font-weight: 700;
+            font-size: 15px;
+            padding-left: 15px;
+        }
+        .company-name, .contact-name {
+            color: #d0d8e8;
+            font-weight: 500;
+        }
+        .address-link {
+            color: #55b2f4;
+            text-decoration: none;
+        }
+        .address-link:hover {
+            text-decoration: underline;
+        }
+        .status-badge {
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .status-fin { background-color: #2e7d32; }
+        .status-wif { background-color: #f9a825; color: #111; }
+        .status-eta { background-color: #d84315; }
+        .status-finished { background-color: #546e7a; }
+        .fa-sort {
+            margin-left: 5px;
+            color: #6a788d;
+        }
+    </style>
+</head>
+<body>
+<div class="dashboard-wrapper">
+    <header class="main-header">
+        <div class="logo">8PIQ</div>
+        <div class="user-profile">Virgil Pana</div>
+    </header>
+    <nav class="nav-bar">
+        <a href="#" class="active"><i class="fas fa-tachometer-alt"></i>DASHBOARD</a>
+        <a href="#"><i class="fas fa-users"></i>USERS</a>
+        <a href="#"><i class="fas fa-exclamation-triangle"></i>PRIORITY</a>
+        <a href="#"><i class="fas fa-folder"></i>COLLECTIONS</a>
+        <a href="#"><i class="fas fa-archive"></i>ARCHIVED</a>
+        <a href="#"><i class="fas fa-trash"></i>DELETED</a>
+        <a href="#"><i class="fas fa-chart-line"></i>TRENDS</a>
+        <a href="#"><i class="fas fa-tasks"></i>TASKS</a>
+        <a href="#"><i class="fas fa-filter"></i>FILTERS</a>
+        <a href="#"><i class="fas fa-chart-bar"></i>STATS</a>
+    </nav>
+    <main class="content-area">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Revenue</th>
+                    <th>VAT</th>
+                    <th>Total_Price<i class="fas fa-sort"></i></th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="month-group-row"><td colspan="8">March 2014</td></tr>
+                <tr>
+                    <td>IBBP Apps</td>
+                    <td class="company-name">H&R Real I</td>
+                    <td class="contact-name">Joshua O'S</td>
+                    <td>276 Tremont Street, Boston, MA 02116</td>
+                    <td>$420.930,-</td>
+                    <td>--</td>
+                    <td>$420.930,-</td>
+                    <td><span class="status-badge status-fin">FIN</span></td>
+                </tr>
+                <tr>
+                    <td>SRA - General Contacts</td>
+                    <td class="company-name">Great Wes</td>
+                    <td class="contact-name">Eli Ahmad</td>
+                    <td>1310 Mission Street San Francisco, CA</td>
+                    <td>$312.840,-</td>
+                    <td>--</td>
+                    <td>$312.840,-</td>
+                    <td><span class="status-badge status-wif">WIF</span></td>
+                </tr>
+                <tr>
+                    <td>CCST</td>
+                    <td class="company-name">Fording Fi</td>
+                    <td class="contact-name">Dennis Vill</td>
+                    <td>San Diego, CA 92138-1796</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>$112.483,-</td>
+                    <td><span class="status-badge status-wif">WIF</span></td>
+                </tr>
+                <tr class="month-group-row"><td colspan="8">April 2014</td></tr>
+                <tr>
+                    <td>eDiscovery</td>
+                    <td class="company-name">Ensign Ene</td>
+                    <td class="contact-name">Garry Lock</td>
+                    <td>Arlington VA 22204</td>
+                    <td>$23.334,-</td>
+                    <td>--</td>
+                    <td>$1,082.22</td>
+                    <td><span class="status-badge status-fin">FIN</span></td>
+                </tr>
+                <tr>
+                    <td>El Tools</td>
+                    <td class="company-name">Fortis Inc.</td>
+                    <td class="contact-name">George Bu</td>
+                    <td>1250 Weaver Street, San Diego CA 92114</td>
+                    <td>$473.843,-</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td><span class="status-badge status-wif">WIF</span></td>
+                </tr>
+                <tr>
+                    <td>Accupure</td>
+                    <td class="company-name">Manulife F</td>
+                    <td class="contact-name">Manu Acu</td>
+                    <td><a href="#" class="address-link">1072 Folsom Street, #470 San Francisco, CA</a></td>
+                    <td>$232.849,-</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td><span class="status-badge status-fin">FIN</span></td>
+                </tr>
+                 <tr class="month-group-row"><td colspan="8">May 2014</td></tr>
+                <tr>
+                    <td>El Tools</td>
+                    <td class="company-name">CC Imperi</td>
+                    <td class="contact-name">Carlos Ric</td>
+                    <td>1219-1223 Vine Street Philadelphia, PA 191</td>
+                    <td>$840.742,-</td>
+                    <td>$12.834</td>
+                    <td>$1,240.39</td>
+                    <td><span class="status-badge status-eta">ETA</span></td>
+                </tr>
+                <tr>
+                    <td>Accupure</td>
+                    <td class="company-name">Atco Ltd.</td>
+                    <td class="contact-name">Mary Hica</td>
+                    <td>4933 W. Craig Rd. Suite 291 Las Vegas, NV</td>
+                    <td>$845.948,-</td>
+                    <td>$83.932</td>
+                    <td>$1,082.22</td>
+                    <td><span class="status-badge status-finished">FINISHED</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>
+</body>
+</html>

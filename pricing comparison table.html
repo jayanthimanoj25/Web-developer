@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nonprofit Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff;
+            color: #3d4f66;
+            padding: 40px;
+        }
+        .pricing-wrapper {
+            max-width: 1100px;
+            margin: auto;
+        }
+        .main-title {
+            text-align: center;
+            font-size: 36px;
+            color: #3d4f66;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .pricing-table th, .pricing-table td {
+            padding: 25px 15px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .pricing-table thead th {
+            border-bottom: 2px solid #f2f4f8;
+            padding-bottom: 30px;
+        }
+        .pricing-table .plan-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 15px 0 5px 0;
+        }
+        .plan-description {
+            font-size: 14px;
+            color: #8795a9;
+            font-weight: 400;
+            min-height: 40px;
+            margin: 0 0 15px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #00a0f0;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .btn:hover {
+            background-color: #008cd1;
+        }
+        .learn-more {
+            font-size: 14px;
+            color: #00a0f0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .pricing-table tbody th, .pricing-table tbody td {
+            border-bottom: 1px solid #f2f4f8;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .pricing-table tbody th {
+            text-align: left;
+            font-weight: 500;
+            color: #596a82;
+        }
+        .info-icon {
+            display: inline-block;
+            border: 1px solid #c8d1e0;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 11px;
+            color: #8795a9;
+            cursor: help;
+        }
+        .check-mark {
+            color: #38c894;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="pricing-wrapper">
+    <h1 class="main-title">Simple nonprofit pricing</h1>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th style="width: 20%;">
+                    <div style="width:160px; height:120px; background:#e0f3ff; border-radius:8px; margin:auto;"></div>
+                </th>
+                <th style="width: 20%;">
+                    <h2 class="plan-name">GoFundMe</h2>
+                    <p class="plan-description">Quick and easy online crowdfunding</p>
+                    <a href="#" class="btn">Get Started</a><br>
+                    <a href="#" class="learn-more">Learn more</a>
+                </th>
+                <th style="width: 20%;">
+                    <h2 class="plan-name">Essential</h2>
+                    <p class="plan-description">All the basics for event & team crowdfunding</p>
+                    <a href="#" class="btn">Get Started</a><br>
+                    <a href="#" class="learn-more">Learn more</a>
+                </th>
+                <th style="width: 20%;">
+                    <h2 class="plan-name">Premium</h2>
+                    <p class="plan-description">Everything you need to grow your nonprofit</p>
+                    <a href="#" class="btn">Contact Us</a><br>
+                    <a href="#" class="learn-more">Learn more</a>
+                </th>
+                <th style="width: 20%;">
+                    <h2 class="plan-name">Enterprise</h2>
+                    <p class="plan-description">Advanced features for scaling your nonprofit</p>
+                    <a href="#" class="btn">Contact Us</a><br>
+                    <a href="#" class="learn-more">Learn more</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th colspan="5" style="text-align:left; font-size:18px; font-weight:600; padding-top:30px; background-color: #cfd2d9;">Pricing</th></tr>
+            <tr>
+                <th>Plan cost <span class="info-icon">i</span></th>
+                <td>Free</td>
+                <td>Free</td>
+                <td>Contact us</td>
+                <td>Contact us</td>
+            </tr>
+            <tr>
+                <th>Platform fee <span class="info-icon">i</span></th>
+                <td>0%</td>
+                <td>5%</td>
+                <td>3%</td>
+                <td>Contact us</td>
+            </tr>
+            <tr>
+                <th>Payment processing</th>
+                <td>2.9% + 30¢</td>
+                <td>2.9% + 30¢</td>
+                <td>2.4% + 30¢</td>
+                <td>Contact us</td>
+            </tr>
+            <tr><th colspan="5" style="text-align:left; font-size:18px; font-weight:600; padding-top:30px; background-color: #bec4ce;">Features</th></tr>
+            <tr>
+                <th>Unlimited fundraising campaigns</th>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+            </tr>
+            <tr>
+                <th>Easy access to funds</th>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+                <td class="check-mark">✔</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

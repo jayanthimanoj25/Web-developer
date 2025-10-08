@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey form</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+     body{
+            text-align: justify;
+            border-radius: 10px;
+            padding: 3%;
+            margin: 10%;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-bottom:20% ;
+        }
+        fieldset{
+             background-color: green;
+        }
+        form{
+           border: 4px solid black; 
+           background-color: aliceblue;
+        }
+</style>
+<body>
+    <fieldset>
+    <h1>GeeksforGeeks Survey Form</h1>
+    <form>
+         <label for ="name">Name  </label><br><br>
+    <input type="text" id ="name" value="Enter your name"><br><br>
+        <label for ="email">Email  </label><br><br>
+        <input type="email" id="email" value="Enter your email"><br><br>
+         <label for ="age">Age </label><br><br>
+        <input type="age" id="age" value="Enter your age"><br><br>
+        <label for="option">Which option best describes you?</label><br><br>
+        <select name="Intern" >
+        <option value="Intern">Intern</option>
+        <option value="student">Student</option>
+        <option value="Job">Job</option>
+        </select><br><br>
+        <label for="friend">Would you recommend GeeksforGeeks to a friend?<br>
+        <input type="radio" id ="Yes" value="Yes">Yes<br>
+        <input type="radio" id ="no" value="no">No<br>
+        <input type="radio" id ="may be" value="may be">Maybe<br>
+        </label>
+        <label for="languages">Languages and Frameworks<br>
+            <input type="checkbox" id="c">C<br>
+            <input type="checkbox" id="c++">C++<br>
+            <input type="checkbox" id="c#">C#<br>
+            <input type="checkbox" id="Java">Java<br>
+            <input type="checkbox" id="python">Python<br>
+            <input type="checkbox" id="Java script">Java script<br>
+            <input type="checkbox" id="React">React<br>
+            <input type="checkbox" id="Angular">Angular<br>
+        <label for="comments">Any comments<br><br>
+         <input type="text" value="Everything perfect" rows="3"><br><br>
+        </label>
+        <input type="button" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

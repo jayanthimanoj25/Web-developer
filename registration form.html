@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+    body{
+            text-align: justify;
+            border: 4px solid black;
+            border-radius: 10px;
+            padding: 3%;
+            margin: 10%;
+            margin-top: 5%;
+            margin-left: 25%;
+            margin-right: 35%;
+            margin-bottom:20% ;
+        }
+        h1{
+         text-align: center;
+         color: blue;
+        }
+        label{
+         font-weight: bold;
+         font-size: large;
+        }
+
+</style>
+<body>
+    <h1><b>Student Registration Form</b></h1>
+    <label for ="name">Name: </label><br><br>
+    <input type="text" id ="name" value="Enter your name"><br><br>
+
+    <label for ="email">Email: </label><br><br>
+    <input type="email" value="Enter your email" ><br><br>
+
+    <label for="phone number">Phone Number: </label><br><br>
+    <input type="tel" value="Enter your phone number"><br><br>
+
+    <label for ="gender">Gender: </label><br><br>
+    <select name ="gender">
+        <option value = "gender">--Gender--</option>
+        <option value ="male">Male</option>
+        <option value ="female">female</option>
+        <option value ="others">others</option>
+    </select><br><br>
+
+    <label for="dob">Date of Birth: </label><br><br>
+    <input type="date" name ="dob"><br><br>
+
+    <label for ="course">Course: </label><br><br>
+    <select name="course" id = "course"><br><br>
+        <option value="course">--select course--</option>
+        <option value="course">CSE</option>
+        <option value="course">Cyber Security</option>
+        <option value="course">Data science</option>
+        <option value="course">EEE</option>
+        <option value="course">AIML</option>
+    </select><br><br>
+
+    <label for ="address">Address: </label><br><br>
+    <input type="text" value="Enter your address" rows="3"><br><br>
+
+    <input type="button" value="register">
+    <input type="button" value="Reset">  
+</body>
+</html>

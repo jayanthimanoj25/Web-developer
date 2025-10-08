@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Events </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button, input {
+      margin: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    #hoverBox {
+      width: 150px;
+      height: 150px;
+      background: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body onload="alert('Page Loaded!')">
+  <h1>JavaScript Events Demo</h1>
+
+  <!-- 1. Mouse Events -->
+  <section>
+    <h2>Mouse Events</h2>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    <button ondblclick="alert('Button Double Clicked!')">Double Click Me</button>
+    <div id="hoverBox" onmouseover="this.style.background='orange'" onmouseout="this.style.background='lightblue'">
+      Hover Me
+    </div>
+  </section>
+
+  <!-- 2. Keyboard Events -->
+  <section>
+    <h2>Keyboard Events</h2>
+    <input type="text" id="keyInput" placeholder="Type something"
+      onkeydown="document.getElementById('keyOutput').innerText='Key Down'"
+      onkeypress="document.getElementById('keyOutput').innerText='Key Pressed'"
+      onkeyup="document.getElementById('keyOutput').innerText='Key Released'">
+    <p id="keyOutput"></p>
+  </section>
+  <!-- 4. Window Events -->
+  <section>
+    <h2>Window Events</h2>
+    <p>Resize or scroll the window to trigger events.</p>
+    <p id="resizeOutput"></p>
+    <p id="scrollOutput"></p>
+  </section>
+
+  <script>
+    // Window resize event
+    window.onresize = function() {
+      document.getElementById("resizeOutput").innerText = "Window resized to: " + window.innerWidth + " x " + window.innerHeight;
+    };
+
+    // Window scroll event
+    window.onscroll = function() {
+      document.getElementById("scrollOutput").innerText = "You scrolled to: " + window.scrollY + " px";
+    };
+
+    // Before unload event
+    window.onbeforeunload = function() {
+      return "Are you sure you want to leave this page?";
+    };
+  </script>
+</body>
+</html>

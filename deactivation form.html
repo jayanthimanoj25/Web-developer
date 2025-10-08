@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account deactivation form</title>
+</head>
+<style>
+    body{
+        border-radius: 20%;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-top: 10%;
+    }
+    fieldset{
+        background-color: blueviolet;
+        text-align: center;
+    }
+</style>
+<body>
+    
+    <fieldset>
+        <h1>LinkedIn Account Deactivation Form</h1>
+        <label for ="email">Email:</label><br>
+        <input type="email" value="Enter your email" ><br><br>
+        <label for="password">Confirm password:</label><br>
+        <input type="password" id="password" value="password"><br><br>
+        <label for ="reason">Reason:</label><br><br>
+        <select><option selected>Select a reason</option><br>
+        <option>Privacy Concerns and Data Security</option>
+        <option>Career Changes and Professional Life Transitions</option>
+        <option>Platform Fatigue and Digital Detox</option>
+        <option> Duplicate Accounts</option>  
+        <option>Other Reasons</option>
+        </select><br><br> 
+        <label for="feedback">Additional Feedback (optional): </label><br>
+        <textarea id="feedback" name="feedback" rows="4" value="Additional feedback"></textarea><br><br>
+        <input type="Deactivate" value ="deactivate" style="background-color: chartreuse;">
+        <button type="cancel">cancel</button>
+        </fieldset>
+    
+</body>
+</html>

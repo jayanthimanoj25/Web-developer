@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas 2d objects</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>CANVAS 2D OBJECTS</h1>
+        <canvas id="myCanvas"></canvas>
+        <script>
+        var canvas = document.getElementById("myCanvas");
+        var c=canvas.getContext("2d");
+        c.fillStyle="red";
+        c.fillRect(50,100,100,500);
+        c.beginPath();
+        c.moveTo(10,300);
+        c.lineTo(300,100);
+        c.strokeStyle="blue";
+        c.stroke();
+        c.beginPath();
+        c.arc(95,50,40,0,2*Math.PI);
+        c.strokeSytle="red";
+        c.stroke();
+        c.font="30px Arial";
+        c.fillStyle="blue";
+        c.fillText("CS",10,50);
+        c.font="30px Arial";
+        c.strokeStyle="black";
+        c.strokeText("Canvas 2d Objects",40,70);
+
+</script>
+</body>
+</html>

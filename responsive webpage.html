@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      padding: 20px;
+    }
+    article {
+      flex: 3;
+      padding: 10px;
+      background: #f0f0f0;
+    }
+    aside {
+      flex: 1;
+      padding: 10px;
+      background: #ddd;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    /* Screen media query */
+    @media screen and (max-width: 600px) {
+      main {
+        flex-direction: column;
+      }
+      aside {
+        margin-top: 10px;
+      }
+    }
+
+    /* Print media query */
+    @media print {
+      header, footer, aside {
+        display: none;
+      }
+      article {
+        flex: 1;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Page</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Main Content</h2>
+      <p>This is the main content area. Resize the window or print this page to see media queries in action.</p>
+    </article>
+    <aside>
+      <h2>Sidebar</h2>
+      <p>This is a sidebar area.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Footer Section</p>
+  </footer>
+</body>
+</html>

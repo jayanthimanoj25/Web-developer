@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandwidth Pricing Table (Green)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lucida+Grande&family=Arial&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lucida Grande', Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .pricing-grid {
+            border-collapse: collapse;
+            border: 1px solid #c9e8ac;
+        }
+        .pricing-grid td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #c9e8ac;
+            background-color: #f1f9e8;
+            font-size: 14px;
+            color: #555;
+        }
+        .header-row td {
+            background-color: greenyellow;
+            color:white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-color: greenyellow;
+        }
+        .feature-cell {
+            background-color:greenyellow;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            font-size: 15px;
+            padding-left: 15px;
+        }
+        .price-row td {
+            background-color: transparent;
+            border: none;
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: green;
+        }
+        .price-row td:first-child {
+            visibility: hidden;
+        }
+        .check-mark {
+            color: green;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<table class="pricing-grid">
+    <tbody>
+        <tr class="header-row">
+            <td></td>
+            <td>Smart Starter</td>
+            <td>Smart Medium</td>
+            <td>Smart Business</td>
+            <td>Smart Deluxe</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">Storage Space</td>
+            <td>512 MB</td>
+            <td>1 GB</td>
+            <td>2 GB</td>
+            <td>4 GB</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">Bandwidth</td>
+            <td>50 GB</td>
+            <td>100 GB</td>
+            <td>150 GB</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">MySQL Databases</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">Setup</td>
+            <td>19.90 $</td>
+            <td>12.90 $</td>
+            <td>free</td>
+            <td>free</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">PHP 5</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+        </tr>
+        <tr>
+            <td class="feature-cell">Ruby on Rails</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+            <td class="check-mark">✓</td>
+        </tr>
+        <tr class="price-row">
+            <td>Price per month</td>
+            <td>$ 2.90</td>
+            <td>$ 5.90</td>
+            <td>$ 9.90</td>
+            <td>$ 14.90</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

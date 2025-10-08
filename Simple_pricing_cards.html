@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pricing Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+        .pricing-card {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding: 40px 20px;
+            width: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+        .plan-name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #3e3f66;
+            margin: 0;
+        }
+        .plan-tagline {
+            font-size: 13px;
+            color: #a0a0c4;
+            margin: 8px 0 30px 0;
+            font-weight: 500;
+        }
+        .plan-price {
+            font-size: 48px;
+            font-weight: 700;
+            color: #3e3f66;
+            margin-bottom: 25px;
+        }
+        .plan-price.special { color: #fd5a48; }
+        .plan-price span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #a0a0c4;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 35px 0;
+            color: #555;
+            font-size: 15px;
+            line-height: 2.2;
+            color: #8787a9;
+        }
+        .card-content {
+            padding: 0 20px;
+        }
+        .illustration-area {
+            height: 200px;
+            position: relative;
+        }
+        .illustration-placeholder { /* Placeholder for illustration */
+            height: 130px;
+            background-color: #f0f0ff;
+            border-radius: 8px;
+            margin: auto;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: 100px;
+            background: #fff;
+            border-radius: 100% / 50%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 45px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .btn-personal { background: linear-gradient(to right, #8a84ff, #a5a1ff); }
+        .btn-business { background: linear-gradient(to right, #ff7a6e, #ff998f); }
+        .btn-enterprise { background: linear-gradient(to right, #8a84ff, #a5a1ff); }
+    </style>
+</head>
+<body>
+<div class="pricing-container">
+    <div class="pricing-card">
+        <div class="card-content">
+            <h3 class="plan-name">Personal</h3>
+            <p class="plan-tagline">We Think Ahead</p>
+            <p class="plan-price">$29 <span>/month</span></p>
+        </div>
+        <div class="illustration-area">
+            <div class="illustration-placeholder"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="card-content">
+            <ul class="features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <a href="#" class="btn btn-personal">READ MORE</a>
+        </div>
+    </div>
+    <div class="pricing-card">
+        <div class="card-content">
+            <h3 class="plan-name">Business</h3>
+            <p class="plan-tagline">Special Offer</p>
+            <p class="plan-price special">$38 <span>/month</span></p>
+        </div>
+        <div class="illustration-area">
+            <div class="illustration-placeholder"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="card-content">
+            <ul class="features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <a href="#" class="btn btn-business">READ MORE</a>
+        </div>
+    </div>
+    <div class="pricing-card">
+        <div class="card-content">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-tagline">Our Best Solution</p>
+            <p class="plan-price">$75 <span>/month</span></p>
+        </div>
+        <div class="illustration-area">
+            <div class="illustration-placeholder"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="card-content">
+            <ul class="features">
+                <li>Mobile-Optimized</li>
+                <li>Free Custom Domain</li>
+                <li>Best Web Hosting</li>
+                <li>Outstanding Support Team</li>
+                <li>Our Happy Customers</li>
+            </ul>
+            <a href="#" class="btn btn-enterprise">READ MORE</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
